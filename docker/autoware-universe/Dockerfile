@@ -42,6 +42,10 @@ RUN rm -rf \
   /etc/apt/sources.list.d/docker.list \
   /etc/apt/sources.list.d/nvidia-docker.list
 
+## Set env for nvidia-container-runtime
+ENV NVIDIA_VISIBLE_DEVICES all
+ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
+
 ## Create entrypoint
 # hadolint ignore=DL3059
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" > /etc/bash.bashrc

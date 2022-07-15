@@ -19,8 +19,9 @@ repositories:
   # universe
   universe/autoware.universe:
     type: git
-    url: https://github.com/autowarefoundation/autoware.universe.git
-    version: main
+    url: https://github.com/takeshi-iwanari/autoware.universe.git
+    # url: git@github.com:takeshi-iwanari/autoware.universe.git
+    version: experiment/apply-caret-20220715
   universe/external/tier4_ad_api_adaptor: # TODO(TIER IV): Improve design/code and transfer to AWF
     type: git
     url: https://github.com/tier4/tier4_ad_api_adaptor.git
@@ -82,3 +83,8 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/autoware_individual_params.git
     version: main
+  # vendor
+  vendor/caret_autoware_launch:
+    type: git
+    url: git@github.com:tier4/caret_autoware_launch.git
+    version: 279cff67770ce467a53cade9ef3b987bad2f03f3
